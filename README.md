@@ -12,6 +12,8 @@ with connection URLS specific to database and override default implementation of
 3) Specify the '--connection-manager' option corresponding to newly created connection manager 
 
 ```
-sqoop import --connection-manager org.apache.connectors.teiid.TeiidManager --driver org.teiid.jdbc.TeiidDriver --verbose --connect jdbc:teiid:<rest of connection details> --username <user> --password <password> --table test_table --hcatalog-database 
+sqoop import --connection-manager org.apache.connectors.teiid.TeiidManager \
+--driver org.teiid.jdbc.TeiidDriver --verbose --connect jdbc:teiid:<rest of connection details> 
+--username <user> --password <password> --table test_table --hcatalog-database 
 test_db --hcatalog-table test_hive_tbl
 ```
