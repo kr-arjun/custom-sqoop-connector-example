@@ -13,7 +13,7 @@ with connection URLS specific to database and override default implementation of
 
 ```
 sqoop import --connection-manager org.apache.connectors.teiid.TeiidManager \
---driver org.teiid.jdbc.TeiidDriver --verbose --connect jdbc:teiid:<rest of connection details> 
---username <user> --password <password> --table test_table --hcatalog-database 
+--driver org.teiid.jdbc.TeiidDriver --verbose --connect jdbc:teiid:<rest of connection details> \
+--username <user> --password <password> --table test_table --hcatalog-database \
 test_db --hcatalog-table test_hive_tbl
 ```
